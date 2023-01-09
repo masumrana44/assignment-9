@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Options.css';
+ import  './Options.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // let selected=false;
@@ -8,7 +8,6 @@ const Options = ({ option, correctAnswer, selected, setSelected }) => {
      
     const CheakValue = (event) => {
 
-        // console.log(selected)
         if (selected) {
             return
         }
@@ -53,7 +52,7 @@ const Options = ({ option, correctAnswer, selected, setSelected }) => {
 
     return (
 
-        <div onClick={(event) => CheakValue(event)} className={`option-container`}>
+        <div onClick={(event) => CheakValue(event)} className='option-container'>
             <p >{option}</p>
             <ToastContainer
 

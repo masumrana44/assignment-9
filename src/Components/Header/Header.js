@@ -11,7 +11,7 @@ const Header = () => {
                 <div className='logo'>
                     <h2>QuizGig</h2>
                 </div>
-                <div className={`link-container ${open ? 'css1' : 'css2'}`} >
+                <div className={`link-container ${open ? 'css11' : 'css22'}`} >
                     <Link to='/topics'>Topics</Link>
                     <Link to='/statistics'>Statistics</Link>
                     <Link to='./blog'>Blog</Link>
