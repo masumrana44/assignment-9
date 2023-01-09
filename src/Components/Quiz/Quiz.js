@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Options from '../Options/Options';
 import './Quiz.css'
 const Quiz = ({data}) => {
     const {id,name,question,correctAnswer,options}=data
-      
+      const [selected,setSelected]=useState(false);
     return (
         <div className='quiz-container'>
             <div className='quistion'>
@@ -11,7 +11,7 @@ const Quiz = ({data}) => {
             </div>
             <div className='options-container'>
              {
-                options.map((option,index)  =><Options correctAnswer={correctAnswer} key={index} 
+                options.map((option,index)  =><Options selected={selected} setSelected={setSelected} correctAnswer={correctAnswer} key={index} 
                  option={option}/>)
              }
             </div>

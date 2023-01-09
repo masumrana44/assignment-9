@@ -3,16 +3,16 @@ import './Options.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // let selected=false;
-const Options = ({ option, correctAnswer }) => {
-    const [selected, setSelected] = useState(false);
-    //  console.log( 'hello')
+const Options = ({ option, correctAnswer, selected, setSelected }) => {
+     
+     
     const CheakValue = (event) => {
-         
+
         // console.log(selected)
-        if(selected){
+        if (selected) {
             return
         }
-        
+
         if (option === correctAnswer) {
 
             event.currentTarget.classList.add(
@@ -28,11 +28,11 @@ const Options = ({ option, correctAnswer }) => {
                 draggable: true,
                 progress: undefined,
                 theme: "light",
-                
-                });
+
+            });
         }
         else {
-            
+
             event.currentTarget.classList.add(
                 'css1'
 
@@ -46,17 +46,17 @@ const Options = ({ option, correctAnswer }) => {
                 draggable: true,
                 progress: undefined,
                 theme: "light",
-                });
+            });
         }
-       setSelected(true);
+        setSelected(true);
     }
-     
+
     return (
 
-        <div onClick={ CheakValue} className={`option-container`}>
+        <div onClick={(event) => CheakValue(event)} className={`option-container`}>
             <p >{option}</p>
             <ToastContainer
-                 
+
             />
 
         </div>
