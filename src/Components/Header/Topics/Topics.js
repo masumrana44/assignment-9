@@ -5,7 +5,7 @@ import './Topics.css'
 const Topics = () => {
     const data=useLoaderData();
     const topics=data.data;
-     console.log(topics)
+     
     return (
  
         <div className='topics-parent-container'>

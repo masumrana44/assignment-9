@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Topics from './Components/Header/Topics/Topics';
-import ReactQuiz from './Components/ReactQuiz/ReactQuiz';
+import Quizs from './Components/Quizs/Quizs';
 import Main from './Outlay/Main';
 
 function App() {
@@ -29,7 +29,10 @@ function App() {
     },
 
     {
-      path: '/react', element: <ReactQuiz />
+      path: '/quiz/:reactId', element:<Quizs/>,
+      loader:async({params})=>{
+        return fetch(`https://openapi.programming-hero.com/api/quiz/${params.reactId}`)
+      }
     }
 
   ])
