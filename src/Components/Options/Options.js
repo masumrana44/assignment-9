@@ -19,7 +19,7 @@ const Options = ({ option, correctAnswer, selected, setSelected }) => {
 
             );
             toast.success(' Yea. Right Answer!', {
-                position: "top-center",
+                position: "bottom-center",
                 autoClose: 1700,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -37,7 +37,7 @@ const Options = ({ option, correctAnswer, selected, setSelected }) => {
 
             );
             toast.warn(' Wrong Answer!', {
-                position: "top-center",
+                position: "bottom-center",
                 autoClose: 1700,
                 hideProgressBar: false,
                 closeOnClick: true,

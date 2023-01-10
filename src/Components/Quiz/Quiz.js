@@ -8,21 +8,11 @@ const Quiz = ({ data, sl }) => {
     const { id, name, question, correctAnswer, options } = data
     const [selected, setSelected] = useState(false);
     const [openA, SetOpenA] = useState(false)
-    console.log(openA)
-    const currectAnswer = () => {
-        // toast.info(`The Currect Answer is " ${correctAnswer} "`, {
-        //     position: "top-center",
-        //     autoClose: 2000,
-
-        //     theme: "light",
-
-        //     });
-
-
-    }
+     
+     
     return (
         <div className={`quiz-container `}>
-            <div onClick={currectAnswer} >
+            <div >
                 {/* EyeIcon bar  */}
                 <div className={`show-currect-ans ${openA ? 'block1' : 'block2'} `} >
                     <div className='iconx' onClick={() => { SetOpenA(false) }} >

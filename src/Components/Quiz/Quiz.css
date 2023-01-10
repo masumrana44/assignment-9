@@ -27,6 +27,7 @@
 
   .quiz-container {
     position: relative;
+    
 
   }
 
@@ -60,7 +61,7 @@
   }
 
 
-  @media screen and (max-width:576px) {
+  @media only screen and (max-width:576px) {
 
     .show-currect-ans {
       width: 300px;
