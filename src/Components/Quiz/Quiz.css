@@ -1,11 +1,79 @@
-  .css1{
+  .css1 {
     background-color: red;
-    color:white;
+    color: white;
     font-weight: bold;
   }
-  
-  .css2{
+
+  .css2 {
     background-color: #00D84A;
-    color:white;
+    color: white;
     font-weight: bold;
+  }
+
+
+  .icon {
+    width: 30px;
+
+  }
+
+  .iconx{
+    width: 28px;
+    color:white;
+    
+    
+  }
+
+
+
+  .quiz-container {
+    position: relative;
+
+  }
+
+  .show-currect-ans {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 15%;
+    background-color: #0c0f12;
+    border-radius: 8px;
+    
+     
+    
+
+  }
+
+  .show-contents{
+    color:white;
+    padding:20px;
+    box-sizing: border-box;
+  }
+
+  .block1 {
+    display: block;
+
+  }
+
+  .block2 {
+    display: none;
+  }
+
+
+  @media screen and (max-width:576px) {
+
+    .show-currect-ans {
+      width: 300px;
+      height: 250px;
+
+      position: absolute;
+      margin-top: 30px;
+      margin-left: 12.5%;
+      background-color: #0c0f12;
+      border-radius: 8px;
+    }
+
+   
+
+
   }

@@ -11,7 +11,7 @@ const Header = () => {
                 <div className='logo'>
                     <h2>QuizGig</h2>
                 </div>
-                <div className={`link-container ${open ? 'css11' : 'css22'}`} >
+                <div className={`link-container ${open? 'notOpen' : 'open'}`} >
                     <Link to='/topics'>Topics</Link>
                     <Link to='/statistics'>Statistics</Link>
                     <Link to='./blog'>Blog</Link>
@@ -31,7 +31,8 @@ const Header = () => {
                          of our society.  Our trivia 
                            on web development has questions about every aspect concerning web 
                             development nowadays and will test your knowledge on the matter. Can 
-                             you face all these questions?  <Link to='/'>Learn More....</Link> </p> 
+                             you face all these questions?  <Link to='/'>Learn More....</Link> 
+                              </p> 
                              
                             
                              <div className='banner-link'>

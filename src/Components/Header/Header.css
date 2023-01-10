@@ -66,21 +66,22 @@
         
     }
 
-    .link_container {
+    .link-container {
         position: absolute;
         width: 100%;
         background-color: black;
         display: grid;
         gap: 30px;
+        left:0px;
 
     }
 
-    .css11 {
-        top: -300px;
+    .notOpen {
+        top: -500px;
 
     }
 
-    .css22 {
+    .open{
         top: 90px;
         z-index: 500;
     }
