@@ -1,9 +1,9 @@
 import React from 'react';
-
+import './Blog.css';
 const Blog = () => {
     return (
-        <div>
-            <div>
+        <div className='blog-container'>
+            <div  className='blog'>
                 <h3>Q-1:<small>What is the purpose of React Router?</small></h3>
                 <h6>Ans:-<small>The Router in React JS is primarily used to create Single Page 
                     Web Apps. In the application, React Router is utilized to define various 
@@ -16,7 +16,7 @@ const Blog = () => {
                     Context API provides a way to send data like userid, auth, and theme data 
                     through the component tree without sending any props manually at every 
                     level.</small></h6>
-                <h3>Q-3: <small></small></h3>
+                 
             </div>
         </div>
     );
